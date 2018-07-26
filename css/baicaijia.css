@@ -1,0 +1,124 @@
+/* 头部修改 */
+.hd_search {
+  position: relative;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: #f1f1f1;
+}
+.hd_search .mui-segmented-control .mui-control-item {
+  height: .8rem;
+  font-size: .28rem;
+  line-height: .8rem;
+}
+.hd_search .mui-scroll .mui-active {
+  color: #e4393c !important;
+  border-bottom: 2px solid #e4393c !important;
+}
+.mmb_main {
+  background-color: #f1f1f1;
+}
+.mmb_main li {
+  background-color: #fff;
+  box-sizing: content-box;
+  padding: .2rem .1rem;
+  margin-bottom: .2rem;
+}
+.mmb_main li img {
+  float: left;
+  width: 2.7rem;
+  height: 2.6rem;
+  margin-right: .1rem;
+}
+.mmb_main li .mc_msg {
+  overflow: hidden;
+}
+.mmb_main li .mc_msg p {
+  margin: 0;
+}
+.mmb_main li .mc_msg p:nth-child(1) {
+  font-size: .28rem;
+  color: #000;
+  height: .56rem;
+}
+.mmb_main li .mc_msg p:nth-child(2) {
+  color: #fc353a;
+  font-size: .48rem;
+  height: .56rem;
+}
+.mmb_main li .mc_msg p:nth-child(2) i {
+  font-size: .32rem;
+  margin-right: .1rem;
+  font-style: normal;
+}
+.mmb_main li .mc_msg p:nth-child(2) em {
+  font-size: .24rem;
+}
+.mmb_main li .mc_msg p:nth-child(2) del {
+  margin-left: .2rem;
+  font-size: .24rem;
+  color: #a8a8a8;
+}
+.mmb_main li .mc_msg .bar i {
+  float: left;
+  display: block;
+  height: .4rem;
+  width: 1.64rem;
+  border: 1px solid #fc353a;
+  overflow: hidden;
+  border-radius: .1rem;
+  background-color: #ffb7b7;
+  margin: 5px 10px 0 0;
+  position: relative;
+}
+.mmb_main li .mc_msg .bar i em {
+  height: 100%;
+  display: block;
+  border-radius: .1rem;
+  background-color: #fc353a;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mmb_main li .mc_msg .bar i span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  line-height: 100%;
+  text-align: center;
+  font-size: .24rem;
+}
+.mmb_main li .mc_msg .bar b {
+  overflow: hidden;
+  font-size: .24rem;
+  font-weight: normal;
+  color: #fc353a;
+}
+.mmb_main li .mc_msg .link {
+  margin-top: .3rem;
+}
+.mmb_main li .mc_msg .link a {
+  font-size: .24rem;
+}
+.mmb_main li .mc_msg .link a:nth-child(1) {
+  float: left;
+  width: 2.4rem;
+  height: .56rem;
+  line-height: .56rem;
+  text-align: center;
+  border: 1px dotted #E4393C;
+  color: #E4393C;
+}
+.mmb_main li .mc_msg .link a:nth-child(2) {
+  float: right;
+  width: 1.2rem;
+  height: .6rem;
+  line-height: .6rem;
+  text-align: center;
+  color: #fff;
+  background-color: #FF5E5D;
+  border-radius: .1rem;
+}

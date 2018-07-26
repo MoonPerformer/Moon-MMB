@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买--国内折扣</title>
+    <link rel="icon" href="./tangge.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/adapter.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+    <link rel="stylesheet" href="./css/moneyproduct.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="mmb_header">
+        <div class="hd_nav">
+            <a href="moneyctrl.html" class="mui-pull-left">
+                <span class="mui-icon mui-icon mui-icon-back"></span>
+            </a>
+            <h1>国内折扣</h1>
+            <a href="javascrpt:;" class="mui-pull-right">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- 主体加底部 -->
+    <div class="mmb_all">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 主体 -->
+                <div class="mmb_main">
+                    <!-- 商品详情 -->
+                    <div class="pro_detail">
+                        <!-- 详情坑 -->
+                    </div>
+                    <!-- 列表 -->
+                    <div class="pro_Tab">
+                        <!-- 列表坑 -->
+                    </div>
+                    <!-- 点击购买 -->
+                    <div class="pro_buy">
+                        <a href="javascrpt:;" class="">前往购买</a>
+                    </div>
+                    <!-- 广告 -->
+                    <div class="pro_ad">
+                        <img src="./images/mmbweixin2.png" alt="">
+                    </div>
+                    <!-- 评论 -->
+                    <div class="pro_comment">
+                        <!-- 评论坑 -->
+                    </div>
+                </div>
+                <!-- 底部 -->
+                <div class="mmb_footer">
+                    <div class="ft_tool mui-clearfix">
+                        <a href="javascrpt:;" class="">登录</a>
+                        <a href="javascrpt:;" class="">注册</a>
+                        <a href="javascrpt:;" class="top">
+                            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部
+                        </a>
+                    </div>
+                    <div class="ft_msg">
+                        <p>
+                            <a href="javascrpt:;" class="">手机APP下载</a>
+                            <a href="javascrpt:;" class="">慢慢买手机版</a>
+                            -- 掌上比价平台
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 详情模板 -->
+    <script type="text/html" id="tpl">
+        {{ each result v i}}
+        <h3>{{v.productName}}</h3>
+        <div class="pro_info">
+            <span>{{v.productFrom}}</span>
+            <span>{{v.productTime}}</span>
+            <span>{{v.productTips}}</span>
+        </div>
+        <div class="pt_content mui-clearfix">
+            <div class="pro_wrap">
+                {{@v.productImgSm}}
+            </div>
+            <p>{{v.productInfo}}</p>
+            <p>{{v.productInfo1}}</p>
+            {{@v.productImgLg}}
+        </div>
+        {{ /each }}
+    </script>
+    <!-- 列表模板 -->
+    <script type="text/html" id="tpl2">
+        {{ each result v i}}
+        {{@v.productCity}}
+        {{ /each }}
+    </script>
+    <!-- 评论模板 -->
+    <script type="text/html" id="tpl3">
+        {{ each result v i}}
+        {{@v.productComment}}
+        {{ /each }}
+    </script>
+
+
+
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./js/ip.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/moneyproduct.js"></script>
+</body>
+
+</html>

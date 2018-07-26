@@ -1,0 +1,27 @@
+body {
+  padding-top: 1rem;
+}
+.hd_nav {
+  color: #fff;
+  position: relative;
+}
+.hd_nav a {
+  width: 50px;
+  line-height: .64rem;
+}
+.hd_nav a span {
+  font-size: .6rem;
+  font-weight: 700;
+}
+.hd_nav a:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.hd_nav h1 {
+  width: 13rem;
+  font-size: .64rem;
+  line-height: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}

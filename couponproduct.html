@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买--优惠券</title>
+    <link rel="icon" href="./tangge.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/adapter.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+    <link rel="stylesheet" href="./css/couponproduct.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="mmb_header">
+        <div class="hd_nav">
+            <a href="coupon.html" class="mui-pull-left">
+                <span class="mui-icon mui-icon mui-icon-back"></span>
+            </a>
+            <h1>优惠券</h1>
+            <a href="javascrpt:;" class="mui-pull-right">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+        <div class="hd_search">
+            --点餐前出示手机中的优惠券，即可享受优惠--
+        </div>
+    </div>
+    <!-- 主体加底部 -->
+    <div class="mmb_all">
+        <div class="slider_box">
+            <div class="slider_turn">
+                <div class="mui-slider slider_img">
+                    <div class="mui-slider-group">
+                        <!-- 轮播图坑 -->
+                    </div>
+                </div>
+                <span class="mui-icon mui-icon-back slider_l"></span>
+                <span class="mui-icon mui-icon-forward slider_r"></span>
+            </div>
+        </div>
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 主体 -->
+                <div class="mmb_main">
+                    <ul class="mui-clearfix">
+                        <!-- 挖个坑 -->
+                    </ul>
+                </div>
+                <!-- 底部 -->
+                <div class="mmb_footer">
+                    <div class="ft_tool mui-clearfix">
+                        <a href="javascrpt:;" class="">登录</a>
+                        <a href="javascrpt:;" class="">注册</a>
+                        <a href="javascrpt:;" class="top">
+                            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部
+                        </a>
+                    </div>
+                    <div class="ft_msg">
+                        <p>
+                            <a href="javascrpt:;" class="">手机APP下载</a>
+                            <a href="javascrpt:;" class="">慢慢买手机版</a>
+                            -- 掌上比价平台
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 内容模板 -->
+    <script type="text/html" id="tpl">
+        {{ each result v i}}
+        <li data-id="{{v.couponProductId}}">
+            <a href="#popover{{i}}" id="openPopover" class="mui-clearfix">
+                {{@v.couponProductImg}}
+                <div class="mc_msg">
+                    <p class="mui-ellipsis-2">{{v.couponProductName}}</p>
+                    <p>{{v.couponProductPrice}}</p>
+                    <p>{{v.couponProductTime}}</p>
+                </div>
+            </a>
+        </li>
+        {{ /each }}
+    </script>
+
+    <!-- 轮播图模板 -->
+    <script type="text/html" id="tpl2">
+        {{ each result v i}}
+        <div class="mui-slider-item" data-id="{{v.couponProductId}}">
+            <a href="#">
+                {{@v.couponProductImg}}
+            </a>
+        </div>
+        {{ /each }}
+    </script>
+
+
+
+
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./js/ip.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/couponproduct.js"></script>
+</body>
+
+</html>

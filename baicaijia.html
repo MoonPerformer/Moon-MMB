@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买--白菜价</title>
+    <link rel="icon" href="./tangge.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/adapter.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+    <link rel="stylesheet" href="./css/baicaijia.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="mmb_header">
+        <div class="hd_nav">
+            <a href="index.html" class="mui-pull-left">
+                <span class="mui-icon mui-icon mui-icon-back"></span>
+            </a>
+            <h1>白菜价-淘宝内部券</h1>
+            <a href="javascrpt:;" class="mui-pull-right">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+        <div class="hd_search">
+            <div class="mui-scroll-wrapper  mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <div class="mui-scroll title_scr">
+                    <!-- 标题坑 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体加底部 -->
+    <div class="mmb_all">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 主体 -->
+                <div class="mmb_main">
+                    <ul>
+                        <!-- 内容坑 -->
+                    </ul>
+                </div>
+                <!-- 底部 -->
+                <div class="mmb_footer">
+                    <div class="ft_tool mui-clearfix">
+                        <a href="javascrpt:;" class="">登录</a>
+                        <a href="javascrpt:;" class="">注册</a>
+                        <a href="javascrpt:;" class="top">
+                            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部
+                        </a>
+                    </div>
+                    <div class="ft_msg">
+                        <p>
+                            <a href="javascrpt:;" class="">手机APP下载</a>
+                            <a href="javascrpt:;" class="">慢慢买手机版</a>
+                            -- 掌上比价平台
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 标题模板 -->
+    <script type="text/html" id="tpl">
+        {{ each result v i}}
+        <a href="javascrpt:;" class="mui-control-item {{ i === 0 ? 'mui-active' : '' }}" data-id="{{v.titleId}}">{{v.title}}</a>
+        {{ /each }}
+    </script>
+
+    <!-- 内容模板 -->
+    <script type="text/html" id="tpl2">
+        {{ each result v i}}
+        <li>
+            {{@v.productImg}}
+            <div class="mc_msg">
+                <p>{{@v.productName}}</p>
+                <p>{{@v.productPrice}}</p>
+                {{@v.productCouponRemain}}
+                <div class="link">
+                    {{@v.productCoupon}} {{@v.productHref}}
+                </div>
+            </div>
+        </li>
+        {{ /each }}
+    </script>
+
+
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./js/ip.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/baicaijia.js"></script>
+</body>
+
+</html>

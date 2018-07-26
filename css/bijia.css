@@ -1,0 +1,95 @@
+.pro_content {
+  background-color: #fff;
+}
+.pro_content .pro_pro {
+  text-align: center;
+  padding-top: .4rem;
+  position: relative;
+}
+.pro_content .pro_pro p {
+  font-size: .32rem;
+  color: #000;
+  margin-bottom: 1.6rem;
+}
+.pro_content .pro_pro img {
+  margin: 0 auto;
+}
+.pro_content .pro_pro a {
+  width: 1.76rem;
+  padding-top: .48rem;
+  height: 1.76rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pro_content .pro_pro a img {
+  width: .8rem;
+  margin: 0 auto;
+}
+.pro_content .pro_tab li {
+  float: left;
+  width: 33.33%;
+  border: 1px solid #C14D00;
+  border-left: none;
+}
+.pro_content .pro_tab li:nth-of-type(3) {
+  border-right: none;
+  background-image: linear-gradient(#ffd050, #ffd050);
+}
+.pro_content .pro_tab li:nth-of-type(2) {
+  background-image: linear-gradient(#ffd050, #ffbb00);
+}
+.pro_content .pro_tab li:nth-of-type(1) {
+  background-image: linear-gradient(#ffa632, #ff9000);
+}
+.pro_content .pro_tab li a {
+  color: #fff;
+  font-size: .32rem;
+  height: .76rem;
+  line-height: .76rem;
+  text-align: center;
+}
+.pro_content .pro_data {
+  border-bottom: 1px solid #ccc;
+  padding: .16rem;
+  color: #333;
+  line-height: .48rem;
+}
+.pro_content .pro_data img {
+  vertical-align: middle;
+  display: inline-block;
+}
+.pro_content .pro_note {
+  font-size: .24rem;
+  color: #888;
+  padding: .2rem .2rem .4rem;
+}
+.pro_content .pro_comment {
+  border-top: 4px solid #747474;
+}
+.pro_content .pro_comment .com_title {
+  height: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  background-color: #dbdbdb;
+}
+.pro_content .pro_comment .com_content {
+  font-size: .24rem;
+  color: #666;
+}
+.pro_content .pro_comment .com_content li {
+  padding: .2rem;
+  border-bottom: 1px solid #ccc;
+}
+.pro_content .pro_more {
+  padding: .2rem .7rem;
+}
+.pro_content .pro_more a {
+  height: .6rem;
+  color: #333;
+  line-height: .6rem;
+  text-align: center;
+  background: linear-gradient(#f1f1f1, #d4d4d4);
+  border: 1px solid #ccc;
+  border-radius: .2rem;
+}

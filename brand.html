@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买--品牌排行</title>
+    <link rel="icon" href="./tangge.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/adapter.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/brand.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="mmb_header">
+        <div class="hd_nav">
+            <a href="index.html" class="mui-pull-left">
+                <img src="./images/header_logo.png" alt="">
+            </a>
+            <a href="javascrpt:;" class="mui-pull-right">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+        <div class="hd_search">
+            <div class="hd_input">
+                <input type="text" placeholder="请输入你想比价的商品">
+            </div>
+            <button class="mui-btn mui-btn-warning">搜索</button>
+        </div>
+    </div>
+    <!-- 主体加底部 -->
+    <div class="mmb_all">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 主体 -->
+                <div class="mmb_main">
+                    <!-- 导航 -->
+                    <div class="pro_nav">
+                        <a href="index.html" class="">首页</a>
+                        &gt;
+                        <a href="brandTitle.html" class="">全部分类</a>
+                        &gt;
+                    </div>
+                    <!-- 标题 -->
+                    <h3>哪个牌子好</h3>
+                    <!-- 十大品牌 -->
+                    <div class="br_top">
+                        <ul>
+                            <!-- 品牌坑 -->
+                        </ul>
+                    </div>
+                    <!-- 标题 -->
+                    <h3>销量排行</h3>
+                    <!-- 销量 -->
+                    <div class="br_sale">
+                        <ul>
+                            <!-- 销量坑 -->
+                        </ul>
+                    </div>
+                    <!-- 标题 -->
+                    <h3>最新评论</h3>
+                    <!-- 评论 -->
+                    <div class="br_comment">
+                        <ul>
+                            <!-- 评论坑 -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- 底部 -->
+                <div class="mmb_footer">
+                    <div class="ft_tool mui-clearfix">
+                        <a href="javascrpt:;" class="">登录</a>
+                        <a href="javascrpt:;" class="">注册</a>
+                        <a href="javascrpt:;" class="top">
+                            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部
+                        </a>
+                    </div>
+                    <div class="ft_msg">
+                        <p>
+                            <a href="javascrpt:;" class="">手机APP下载</a>
+                            <a href="javascrpt:;" class="">慢慢买手机版</a>
+                            -- 掌上比价平台
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 品牌模板 -->
+    <script type="text/html" id="tpl">
+        {{ each result v i}}
+        <li>
+            <a href="productlist.html?categoryid={{v.categoryId}}&pageid=1" class="">
+                <em>{{i + 1}}</em>
+                <div>
+                    <p>{{v.brandName}}</p>
+                    <p class="mui-clearfix">{{v.brandInfo}}
+                        <span class="mui-icon mui-icon-forward"></span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{ /each }}
+    </script>
+
+    <!-- 销量模板 -->
+    <script type="text/html" id="tpl2">
+        {{ each result v i}}
+        <li data-id="{{v.productId}}">
+            <a href="bijia.html?productId={{v.productId}}">
+                {{@v.productImg}}
+                <div class="mc_msg">
+                    <p>{{v.productName}}</p>
+                    <p class="mui-clearfix">
+                        <span class="price">{{v.productPrice}}</span>
+                        <span class="stars">★★★★★</span>
+                    </p>
+                    <p>
+                        <span>{{v.productQuote}}</span>
+                        <span>{{v.productCom}}</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{ /each }}
+    </script>
+
+    <!-- 评论模板 -->
+    <script type="text/html" id="tpl3">
+        {{ each result v i}}
+        <li>
+            <div class="pro_detail mui-clearfix">
+                <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="">
+                <p>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+            </div>
+            <div class="pro_com">
+                <div class="name">
+                    {{v.comName}}:
+                    <span class="stars">★★★★★</span>
+                    <span class="time">{{v.comTime}}</span>
+                </div>
+                <div class="info">{{v.comContent}}</div>
+            </div>
+        </li>
+        {{ /each }}
+    </script>
+
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./js/ip.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/brand.js"></script>
+</body>
+
+</html>

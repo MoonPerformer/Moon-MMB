@@ -1,0 +1,118 @@
+body {
+    padding-top: 2rem;
+}
+.hd_nav {
+    background-color: #F4483E;
+}
+.hd_search {
+    border-bottom: 1px solid #333;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .32rem;
+    color: #999;
+}
+
+.mmb_main {
+    background-color: #fff;
+    a {
+        box-sizing: content-box;
+        padding: .2rem;
+        border-bottom: 1px solid #ccc;
+        img {
+            float: left;
+            width: 2rem;
+            height: 1.6rem;
+            margin-right: .2rem;
+        }
+        .mc_msg {
+            overflow: hidden;
+        }
+        p {
+            font-size: .28rem;
+            margin: 0;
+            padding-right: .2rem;
+            color: #333;
+            &:nth-child(1) {
+                font-size: 14px;
+                height: 42px;
+            }
+            &:nth-child(2) {
+                font-weight: 700;
+            }
+            &:nth-child(3) {
+                font-size: .24rem;
+                color: #EE7700;
+                padding: .2rem 0;
+            }
+        }
+
+    }
+    li {
+        position: relative;
+        .mui-popover {
+            position: absolute;
+            top: 20% !important;
+            left: 50% !important;
+            transform: translateX(-50%);
+            img {
+                width: 6rem;
+                height: 4rem;
+            }
+        }
+    }
+}
+
+
+/* 模态框 */
+.slider_box {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:10;
+    padding:50px 50px;
+    display:none;
+    .slider_turn {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 12rem;
+        height: 6rem;
+        background-color: sliver;
+        span {
+            width: 1.5rem;
+            height: 2.5rem;
+            display: block;
+            line-height: 2.5rem;
+            text-align: center;
+            color: rgba(223, 205, 205, 0.747);
+            position: absolute;
+            font-size: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+        }
+        .slider_l {
+            left: -1rem;
+        }
+        .slider_r {
+            right: -1rem;
+        }
+        .slider_img {
+            margin: 0 auto;
+            width: 10rem;
+            height: 6rem;
+        }
+        .mui-slider-item {
+            img {
+                width: 10rem;
+                height: 6rem;
+            }
+        }
+
+    }
+
+}

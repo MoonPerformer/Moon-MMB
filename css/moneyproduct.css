@@ -1,0 +1,118 @@
+.mmb_main {
+  background-color: #fff;
+}
+.pro_detail {
+  padding: .2rem;
+}
+.pro_detail h3 {
+  font-size: .4rem;
+  color: #5a5a5a;
+  line-height: .8rem;
+  height: .8rem;
+  margin: 0;
+}
+.pro_detail .pro_info {
+  font-size: 2px;
+  line-height: .6rem;
+  color: #999;
+}
+.pro_detail .pro_wrap {
+  float: right;
+}
+.pro_detail .pro_wrap img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.pro_detail p {
+  color: #606060;
+  font-size: .28rem;
+}
+.pro_detail img {
+  width: 10rem;
+  margin: 0 auto;
+}
+.pro_buy {
+  padding: .4rem .8rem;
+  line-height: .6rem;
+  text-align: center;
+}
+.pro_buy a {
+  border: 1px solid #ccc;
+  border-radius: .1rem;
+  background-color: #FF9000;
+  color: #fff;
+  height: .6rem;
+}
+.pro_ad {
+  padding-top: .4rem;
+}
+.pro_ad img {
+  width: 100%;
+}
+.pro_Tab ul {
+  width: 2.8rem;
+  padding: .2rem;
+  margin: 0 auto;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.pro_Tab ul li {
+  border-bottom: 1px dashed #c0c0c0;
+}
+.pro_Tab ul li span {
+  overflow: hidden;
+  display: block;
+  padding: 0 .2rem;
+}
+.pro_Tab ul li strong {
+  float: right;
+  color: #f27b04;
+  font-weight: 400;
+}
+.pro_comment {
+  padding: .2rem;
+}
+.pro_comment .tit {
+  font-size: .36rem;
+  padding: .2rem 0;
+}
+.pro_comment .form textarea {
+  padding: 0;
+  margin: 0;
+  height: 1.8rem;
+}
+.pro_comment .form .ctrl {
+  height: .88rem;
+  padding-top: .1rem;
+}
+.pro_comment .form .ctrl input {
+  float: right;
+  background-color: #FF841D;
+  border: none;
+}
+.pro_comment .list li {
+  padding: .4rem 0;
+}
+.pro_comment .list .userimg {
+  width: .8rem;
+  height: .8rem;
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pro_comment .list .userimg img {
+  width: 100%;
+}
+.pro_comment .list .con {
+  padding-left: 1rem;
+}
+.pro_comment .list .name .username {
+  float: left;
+  color: #5997c0;
+}
+.pro_comment .list .name .time {
+  float: right;
+  color: #999;
+}
+.pro_comment .list .content {
+  color: #606060;
+}

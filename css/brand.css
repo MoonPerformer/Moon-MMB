@@ -1,0 +1,139 @@
+.mmb_main {
+  background-color: #fff;
+}
+.mmb_main h3 {
+  margin: 0;
+  height: .8rem;
+  padding-left: .2rem;
+  background-color: #F3F3F3;
+  line-height: .8rem;
+  border: 1px solid #C8C8C8;
+  font-size: .32rem;
+  color: #874604;
+}
+.mmb_main .br_top li {
+  padding: .2rem;
+  border-bottom: 1px solid #E7E7E7;
+}
+.mmb_main .br_top li:nth-of-type(1) em {
+  background-color: #f10e0e;
+}
+.mmb_main .br_top li:nth-of-type(2) em {
+  background-color: #ff9314;
+}
+.mmb_main .br_top li:nth-of-type(3) em {
+  background-color: #8adf5b;
+}
+.mmb_main .br_top li em {
+  font-style: normal;
+  margin-right: .2rem;
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  background-color: #c9c9c9;
+  text-align: center;
+  color: #fff;
+  font-size: .28rem;
+}
+.mmb_main .br_top li div {
+  overflow: hidden;
+}
+.mmb_main .br_top li div p {
+  font-size: .32rem;
+}
+.mmb_main .br_top li div p:nth-of-type(1) {
+  color: #000;
+  margin-bottom: .08rem;
+}
+.mmb_main .br_top li div p:nth-of-type(2) {
+  font-size: .28rem;
+}
+.mmb_main .br_top li div p:nth-of-type(2) span {
+  font-size: .6rem;
+  float: right;
+}
+.mmb_main .br_sale li {
+  border-bottom: 1px solid #E7E7E7;
+  box-sizing: content-box;
+  padding: .2rem;
+  height: 2rem;
+}
+.mmb_main .br_sale li img {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  margin-right: .2rem;
+}
+.mmb_main .br_sale li .mc_msg {
+  overflow: hidden;
+}
+.mmb_main .br_sale li p:nth-child(1) {
+  font-size: .28rem;
+  color: #000;
+  margin-bottom: .3rem;
+}
+.mmb_main .br_sale li p:nth-child(2) {
+  padding-top: .1rem;
+}
+.mmb_main .br_sale li p:nth-child(2) .price {
+  float: left;
+  font-size: .36rem;
+  color: #ea3900;
+}
+.mmb_main .br_sale li p:nth-child(2) .stars {
+  float: right;
+  font-size: .4rem;
+  color: #FF9000;
+}
+.mmb_main .br_sale li p:nth-child(3) span {
+  font-size: .24rem;
+  color: #a1a1a1;
+}
+.mmb_main .br_comment li {
+  padding: .2rem;
+}
+.mmb_main .br_comment li .pro_detail img {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  margin-right: .2rem;
+}
+.mmb_main .br_comment li .pro_detail p {
+  overflow: hidden;
+}
+.mmb_main .br_comment li .pro_com {
+  position: relative;
+  padding: .2rem;
+  margin-top: .2rem;
+  background-color: #F8F8F8;
+  border: 1px solid #E7E7E7;
+}
+.mmb_main .br_comment li .pro_com .name {
+  color: #4f6900;
+  font-size: .28rem;
+  height: .6rem;
+}
+.mmb_main .br_comment li .pro_com .name .stars {
+  font-size: .4rem;
+  color: #FF9000;
+}
+.mmb_main .br_comment li .pro_com .name .time {
+  float: right;
+  font-size: .24rem;
+  color: #999;
+}
+.mmb_main .br_comment li .pro_com .info {
+  color: #333;
+}
+.mmb_main .br_comment li .pro_com::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #f8f8f8;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -7px;
+  left: 40px;
+}

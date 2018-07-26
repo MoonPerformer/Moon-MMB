@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买--省钱控</title>
+    <link rel="icon" href="./tangge.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/adapter.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="mmb_header">
+        <div class="hd_nav">
+            <a href="index.html" class="mui-pull-left">
+                <span class="mui-icon mui-icon mui-icon-back"></span>
+            </a>
+            <h1>省钱控 - 最新优惠</h1>
+            <a href="javascrpt:;" class="mui-pull-right">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- 主体加底部 -->
+    <div class="mmb_all">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 主体 -->
+                <div class="mmb_main">
+                    <!-- 商品内容 -->
+                    <div class="mm_content mui-clearfix">
+                        <ul>
+                            <!-- 挖个坑 -->
+                        </ul>
+                    </div>
+                    <!-- 分页 -->
+                    <div class="pro_page mui-clearfix">
+                        <div class="page_l">
+                            <button class="mui-btn prev">上一页</button>
+                        </div>
+                        <div class="page_m">
+                            <select name="select" id="page" class="mui-btn">
+                                <!-- 挖个坑 -->
+                            </select>
+                        </div>
+                        <div class="page_r">
+                            <button class="mui-btn next">下一页</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底部 -->
+                <div class="mmb_footer">
+                    <div class="ft_tool mui-clearfix">
+                        <a href="javascrpt:;" class="">登录</a>
+                        <a href="javascrpt:;" class="">注册</a>
+                        <a href="javascrpt:;" class="top">
+                            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""> 返回顶部
+                        </a>
+                    </div>
+                    <div class="ft_msg">
+                        <p>
+                            <a href="javascrpt:;" class="">手机APP下载</a>
+                            <a href="javascrpt:;" class="">慢慢买手机版</a>
+                            -- 掌上比价平台
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 内容模板 -->
+    <script type="text/html" id="tpl">
+        {{ each result v i}}
+        <li data-id="{{v.productId}}">
+            <a href="moneyproduct.html?productId={{v.productId}}">
+                {{@v.productImgSm}}
+                <div class="mc_msg">
+                    {{v.productName}}
+                    <span class="price">{{v.productPinkage}}</span>
+                    <p> {{v.productFrom}} | {{v.productTime}}
+                        <span class="mui-icon mui-icon mui-icon-chat">{{v.productComCount}}</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{ /each }}
+    </script>
+
+    <!-- 分页模板 -->
+    <script type="text/html" id="tpl3" >
+        <% for(var i = 1; i <= pageNum; i++) {%>
+        <option value="<%= i %>" <%= pageid == i? "selected" : "" %> ><%= i %>/{{pageNum}}</option>
+        <% } %>
+    </script>
+
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./js/ip.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/moneyctrl.js"></script>
+</body>
+
+</html>

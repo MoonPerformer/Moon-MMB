@@ -1,0 +1,29 @@
+.hd_nav {
+  background-color: #F4483E;
+}
+.mmb_main {
+  background-color: #fff;
+}
+.mmb_main li {
+  float: left;
+  width: 33.33%;
+  padding: .3rem .2rem;
+}
+.mmb_main li a {
+  width: 100%;
+  padding: .2rem;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+.mmb_main li img {
+  width: 50%;
+  margin: 0 auto;
+}
+.mmb_main li p {
+  margin: 0;
+  font-size: .32rem;
+  height: .8rem;
+  line-height: .8rem;
+  color: #000;
+  text-align: center;
+}

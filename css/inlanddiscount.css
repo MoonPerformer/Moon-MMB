@@ -1,0 +1,44 @@
+.mmb_main {
+  margin-bottom: .2rem;
+  background-color: #fff;
+}
+.mmb_main li {
+  float: left;
+  width: 50%;
+  padding: .4rem;
+  border-bottom: 1px solid #eee;
+}
+.mmb_main li img {
+  margin: 0 auto;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.mmb_main li div {
+  margin-top: .2rem;
+  font-weight: 700;
+  height: 44px;
+  color: #000;
+  font-size: 14px;
+}
+.mmb_main li p {
+  margin: 0;
+}
+.mmb_main li p:nth-of-type(1) {
+  height: 40px;
+  color: #ff6c00;
+}
+.mmb_main li p:nth-of-type(2) {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.mmb_main li:nth-of-type(odd) {
+  border-right: 1px solid #eee;
+}
+.mui-pull-bottom-pocket {
+  overflow: hidden;
+  font-size: .24rem;
+  bottom: 3.48rem;
+}
+.mmb_footer {
+  margin-top: 40px;
+}
